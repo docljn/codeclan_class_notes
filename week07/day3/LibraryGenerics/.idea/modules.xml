@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibraryGenerics.iml" filepath="$PROJECT_DIR$/.idea/modules/LibraryGenerics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibraryGenerics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/LibraryGenerics_main.iml" group="LibraryGenerics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibraryGenerics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/LibraryGenerics_test.iml" group="LibraryGenerics" />
+    </modules>
+  </component>
+</project>

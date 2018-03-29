@@ -1,0 +1,27 @@
+gitignore
+
+SOURCES:
+https://help.github.com/articles/ignoring-files/ [and internal links]
+https://www.atlassian.com/git/tutorials/gitignore
+
+WHAT?
+This does what it implies: sets the directory, file or filetype [or multiples thereof] which will be ignored during commits.
+There will thus be three types of files in your repository: tracked, untracked, and ignored.
+If you have already checked in a file, it will not be ignored if you add a rule later: you need to specifically untrack it.
+You can set a .gitignore file for each repository, and can also create a global file which applies to all Git repositories on your computer.
+An empty directory will not be tracked by git, so adding .gitignore is often a simple way to ensure that the directory is tracked.
+
+
+WHY?
+Some files, such as databases, locally compiled sourcecode, and system-generated files should not be included in a git repository.  This could be because they contain sensitive information such as passwords, or because they are locally-generated and not relevant to the actual project such as logfiles and automatic backups.
+
+Staging project files manually can be tedious,
+
+HOW?
+create the file in the top level of your repository: touch .gitignore
+edit the file to include patterns of files etc which you want to ignore
+the file will then be tracked along with the rest of the repository
+recommended .gitignore files for various OS and languages can be found here: https://github.com/github/gitignore
+
+PROBLEMS?
+If you can't work out why a particular file is being ignored, you can use git check-ignore -v FILENAME to find out which rule is causing the ignore.

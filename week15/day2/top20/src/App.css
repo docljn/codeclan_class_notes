@@ -1,0 +1,33 @@
+.App {
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 1%;
+}
+
+* {
+  font-family: fantasy;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-style: oblique;
+}
+
+li {
+  border-bottom: 1px dashed lightgrey;
+}
+
+a:link {
+  text-decoration: none;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoopsConditionals.iml" filepath="$PROJECT_DIR$/.idea/modules/LoopsConditionals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoopsConditionals_main.iml" filepath="$PROJECT_DIR$/.idea/modules/LoopsConditionals_main.iml" group="LoopsConditionals" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoopsConditionals_test.iml" filepath="$PROJECT_DIR$/.idea/modules/LoopsConditionals_test.iml" group="LoopsConditionals" />
+    </modules>
+  </component>
+</project>

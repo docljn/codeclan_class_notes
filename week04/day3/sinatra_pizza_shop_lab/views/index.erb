@@ -1,0 +1,20 @@
+<!-- index.erb -->
+<!-- can access @instance variables in controller -->
+
+<h2>All Pizza Orders</h2>
+
+<!-- loop through the array returned by .all() ie. logic not display, so no = in erb tags -->
+<!-- = turns the contents into a string -->
+
+<!-- we have to separate the .map ruby function from the html into which we will be returning the results -->
+
+<!-- the erb tags within the html then reference the variables set up in the initial/outer loop -->
+<table>
+<% @pizzas.each do |pizza|  %>
+  <tr>
+    <td>Name: <%= pizza.pretty_name() %></td> <td>Order: <%= pizza.quantity() %> x <%= pizza.topping %></td> <td><a href="/pizzas/<%= pizza.id %>">Order Details</a></td>
+  </tr>
+  <% end %>
+</table>
+
+  <!-- CARE: Although you are not displaying the pizza.id you are INJECTING IT into the HTML code, so you need < % = -->

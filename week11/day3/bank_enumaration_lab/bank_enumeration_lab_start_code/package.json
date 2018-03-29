@@ -1,0 +1,16 @@
+{
+  "name": "bank_enumeration_lab_start_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "keywords": [],
+  "author": "DocLJN & Topher75",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "mocha": "^3.4.2"
+  }
+}

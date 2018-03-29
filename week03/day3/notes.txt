@@ -1,0 +1,43 @@
+database table relationships
+
+the relationships are between the rows of one table and the rows of another, not between the tables themselves.
+
+1-1:
+- pointless
+- if for some reason you had two tables of customer details, and needed to link them
+- better to just combine the data into a single table
+
+1-many:
+- a single customer can make many orders at the pizza shop
+- each pizza order can only belong to a single customer
+- foreign key in orders table is primary key in customers table
+
+many - many:
+- pizza menu
+- orders
+- customers
+
+- a customer can order many pizzas
+- a pizza can be included in many orders
+- the orders table links the pizza menu and the customers
+
+
+
+
+DRYing out
+- extract the database interactions into their own class
+- relates to database, so in db folder?
+
+
+LOGICAL EXTENSION
+The info is in sql, but we need to get it via Ruby.
+- find all customer's previous orders
+  - customer.pizza_orders()
+    -> returns an array of PizzaOrder objects
+        should be able to use ????
+- find details of the customer associated with a particular order:
+  - pizza_order.customer()
+    -> returns a Customer object
+        should be able to use @customer_id
+
+  

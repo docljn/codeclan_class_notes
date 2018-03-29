@@ -1,0 +1,31 @@
+How ruby talks to a database
+How an object maps to a database row.
+create a single model CRUD app.
+Create
+Read
+Update
+Delete
+
+Pizza Shop ordering system.
+
+A "model" is from the MVC concept: a pattern that applications use
+Model: programmatic representation of the world i.e. logic, properties, etc.
+View: what we see
+Controller: bridge between model and view
+
+
+
+Start with one model, one class, one table.
+
+In ruby, the attributes of a class instance would be equivalent to the columns in an sql table.
+
+create_db pizza_shop
+db/pizza_shop.sql - file to define the table
+
+Error / datatype checking should be done at the front end AND in the database e.g. order can't be negative.
+
+SQL injection:
+- an attack on the database
+- an input could be changed to do more than intended - delete, read data they should not have access to, etc.
+- you need to be careful how the sql query is sent from your app, as otherwise it could be modified by a user.
+- SANITISE YOUR INPUT DATA!!

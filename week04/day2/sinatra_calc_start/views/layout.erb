@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calc-u-l8r</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- sinatra always looks in /public for your stylesheets -->
+    <!-- MUST have the / before the filename -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li> <a href="/">Home</a> </li>
+        <li> <a href="/about_us">About Us</a> </li>
+      </ul>
+    </nav>
+    <%= yield %>
+
+    <!-- the boilerplate layout for the entire website -->
+    <!-- must be called layout.erb and in views directory -->
+
+    <!-- wherever the 'yield' is, include the code which has been provided in the view file -->
+    <footer>This is a footer</footer>
+  </body>
+</html>

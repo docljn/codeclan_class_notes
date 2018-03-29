@@ -1,0 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 10;
+}
+
+#main-canvas{
+  border: 1px solid black;
+
+}

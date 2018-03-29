@@ -1,0 +1,44 @@
+<!-- new.erb -->
+
+<h2>New Student</h2>
+
+<form class="" action="/students" method="POST">
+
+<div class="">
+  <label for="first-name-input">First name: </label>
+  <input id="first-name-input" type="text" name="first_name" value="" autofocus="autofocus">
+</div>
+
+<div class="">
+  <label for="second-name-input">Second name: </label>
+  <input id="second-name-input" type="text" name="second_name" value="">
+</div>
+
+<div class="">
+  <label for="house-input">House: </label>
+  <select id="house-input" class="" name="house">
+    <option value="Gryffindor">Gryffindor</option>
+    <option value="Slytherin">Slytherin</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+  </select>
+</div>
+
+<div class="">
+  <label for="age-input">Age: </label>
+  <input id="age-input" type="number" name="age" value="" min="1">
+</div>
+
+<div class="">
+  <input id="" type="submit" name="add_student" value="Add new student">
+</div>
+
+</form>
+
+<!--
+@id = options['id'].to_i if options['id']
+@first_name = options['first_name']
+@second_name = options['second_name']
+@house = options['house']
+@age = options['age'].to_i -->
+<!-- new.erb -->

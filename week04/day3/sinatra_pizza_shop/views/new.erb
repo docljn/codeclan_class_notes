@@ -1,0 +1,35 @@
+<!-- new.erb -->
+<form class="" action="/pizzas" method="POST">
+  <!-- method="" tells form what HTTP request to use on 'submit' -->
+  <!-- action="" tels form what path to use for the HTTP request -->
+
+  <!-- CARE: model properties === database column names === name="XXX" on inputs in form -->
+
+  <label for="first-name-input">First Name: </label>
+  <input id="first-name-input" type="text" name="first_name" autofocus="autofocus" value="" placeholder="">
+
+  <label for="last-name-input">Last Name: </label>
+  <input id="last-name-input" type="text" name="last_name" value="" placeholder="">
+
+
+  <label for="topping-select">Topping: </label>
+  <select id="topping-select" class="" name="topping" >
+    <option value="Mushroom">Mushroom</option>
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Italian Sausage">Italian Sausage</option>
+    <!-- in future, the topping options would be pulled from a database table -->
+  </select>
+
+  <label for="quantity-input">Quantity: </label>
+  <input id="quantity-input" type="number" min="1" name="quantity" value="" placeholder="">
+
+  <input type="submit" name="" value="Order Now">
+
+</form>
+
+<!-- autofocus="autofocus" means this input field will have the active cursor on page load -->
+
+<!-- to link the label and text box label for="" must match input id="" -->
+
+<!-- min="" sets minimum value of number input using down arrows -->
+<!-- it doesn't stop you typing in a -ve number, so you need to have data cleansing on the back end -->
